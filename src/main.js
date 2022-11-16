@@ -25,7 +25,7 @@ const store = createStore({
         },
         increase(context, payload) {
             context.commit('increase', payload);
-        } 
+        }
     },
     getters: {
         finalCounter(state) {
@@ -39,7 +39,7 @@ const store = createStore({
             if (finalCounter > 100) {
                 return 100;
             }
-            return finalCounter
+            return finalCounter;
         }
     }
 });

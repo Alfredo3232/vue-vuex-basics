@@ -12,7 +12,7 @@ export default {
         // addOne() {
         //     this.$store.commit('increment');
         // }
-        ...mapActions({
+        ...mapActions('numbers', {
             inc: 'increment',
             increase: 'increase'
         })

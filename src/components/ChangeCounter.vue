@@ -1,5 +1,6 @@
 <template>
-    <button @click="increment">Add 2</button>
+    <button @click="inc">Add 2</button>
+
     <button @click="increase({ value: 11 })">Add 11</button>
 </template>
 
@@ -11,7 +12,10 @@ export default {
         // addOne() {
         //     this.$store.commit('increment');
         // }
-        ...mapActions(['increment', 'increase'])
+        ...mapActions({
+            inc: 'increment',
+            increase: 'increase'
+        })
     }
 }
 </script>

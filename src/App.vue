@@ -39,7 +39,7 @@ export default {
       //.this.$store.commit('increase', { value: 10 });
 
       this.$store.dispatch({
-        type: 'increase',
+        type: 'numbers/increase',
         value: 10
       });
     }
